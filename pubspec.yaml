@@ -70,6 +70,16 @@ flutter:
     - assets/images/printer_8.jpg
     - assets/images/printer_9.jpg
     - assets/images/printer_10.jpg
+    - assets/images/printer_11.jpg
+    - assets/images/printer_12.jpg
+    - assets/images/printer_13.jpg
+    - assets/images/printer_14.jpg
+    - assets/images/printer_15.jpg
+    - assets/images/printer_16.jpg
+    - assets/images/printer_17.jpg
+    - assets/images/printer_18.jpg
+    - assets/images/printer_19.jpg
+    - assets/images/printer_20.jpg
     - assets/images/logo.jpg
     - assets/loading.json
   # An image asset can refer to one or more resolution-specific "variants", see

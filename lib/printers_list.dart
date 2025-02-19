@@ -11,7 +11,8 @@ class PrinterListScreen extends StatelessWidget {
     for (int i = 0; i < printers.length; i++) {
       // Determine the correct extension for each printer image
       String imageExtension = 'jpg'; // Default to jpg
-      if (i == 0 || i == 6) {  // Adjust based on actual PNGs
+      if (i == 0 || i == 6) {
+        // Adjust based on actual PNGs
         imageExtension = 'png';
       }
 
@@ -24,7 +25,8 @@ class PrinterListScreen extends StatelessWidget {
         'cons': printers[i].cons,
         'manualOverview': printers[i].manualOverview,
         'tip': printers[i].tip,
-        'imagePath': 'assets/images/printer_${i + 1}.$imageExtension', // Dynamically setting image path
+        'imagePath':
+            'assets/images/printer_${i + 1}.$imageExtension', // Dynamically setting image path
       });
     }
     return summary;
@@ -56,12 +58,14 @@ class PrinterListScreen extends StatelessWidget {
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
                   // Adjusting the childAspectRatio to make images taller
-                  childAspectRatio: screenWidth / (screenHeight / 2.2),  // Makes images taller
+                  childAspectRatio:
+                      screenWidth / (screenHeight / 2.2), // Makes images taller
                 ),
                 itemCount: summary.length, // Dynamic length from the list
                 itemBuilder: (context, index) {
                   var item = summary[index];
-                  print('Loading image: ${item['imagePath']}'); // Log the image path
+                  print(
+                      'Loading image: ${item['imagePath']}'); // Log the image path
 
                   return ElevatedButton(
                     style: ElevatedButton.styleFrom(
@@ -97,9 +101,11 @@ class PrinterListScreen extends StatelessWidget {
                           ),
                           // Title position on top of the image
                           Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 10, vertical: 5),
                             decoration: BoxDecoration(
-                              color: Colors.black.withOpacity(0.6), // Semi-transparent background
+                              color: Colors.black.withOpacity(
+                                  0.6), // Semi-transparent background
                               borderRadius: BorderRadius.circular(5),
                             ),
                             child: Text(
